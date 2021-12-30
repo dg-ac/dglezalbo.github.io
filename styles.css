@@ -1,0 +1,120 @@
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#ECECEC 1px, #ffffff 0.5px);
+    background-size: 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#7B61FF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 0px auto 5px auto;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0px auto 10px auto;
+    font-weight: 300;
+    color: gray;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+    margin: 5px auto 5px auto;
+}
+
+p {
+    font-size: 16px;
+    line-height:inherit;
+    margin: 5px auto 5px auto;
+    font-weight: 300;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    max-width: 550px;
+    text-align: left;
+    margin: 100px auto 0px auto;
+    padding: 30px;
+}
+
+.location {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 20px;
+    margin: 20px auto 40px auto;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.location .city {
+    font-size: 10px;
+}
+
+.section {
+    margin-top : 20px;
+}
+
+.section-body {
+    margin: 0px auto 0px auto;
+}
+
+.social {
+    margin: 10px auto 40px auto;
+}
+
+.fa {
+    font-size: 20px;
+    margin-right: 15px;
+    opacity: 0.4;
+    width: auto;
+    border-radius: 3px;
+    text-align: center;
+    color: #7B61FF;
+
+}
+
+.fa:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.selected-works {
+    margin-top: 40px;
+}
+
+.thumbnail {
+    margin-top: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+footer {
+    margin: 40px auto 20px auto;
+}
