@@ -6,6 +6,8 @@ body {
     opacity: 1;
     background-size: 10px 10px;
     line-height: 120%;
+    font-size: 14px;
+    line-height: 135%;
 }
 
 a {
@@ -14,8 +16,24 @@ a {
     font-weight: 400;
 }
 
+a.grey {
+    color:#72788c;
+}
+
 a:hover {
     text-decoration: underline;
+}
+
+.wrapper {
+    max-width: 520px;
+    min-width: 120px;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+    margin: 80px auto 0px auto;
+}
+
+.wrapper.nopadding {
+    margin: 0px auto;
 }
 
 .company {
@@ -25,26 +43,33 @@ a:hover {
 
 .position {
     color: rgb(107, 107, 107);
-    margin-left: 20px;
 }
 
 .year {
     font-family: 'Fira Code', monospace;
-    margin-left: 20px;
 }
 
 .mainpic {
-    background-image: url("images/dgc.jpeg");
+    background-image: url("images/dgc.png");
     background-size: cover;
     height: 72px;
     width: 72px;
     border-radius: 50%;
 }
 
+.mainpic:hover {
+    background-image: url("images/dgc2.png");
+}
+
 h1 {
     font-size: 18px;
-    margin: 0px auto 5px auto;
+    margin: 0px;
     font-weight: 600;
+}
+
+h1.large {
+    font-size: 32px;
+    line-height: 32px;
 }
 
 h2 {
@@ -66,10 +91,13 @@ h5 {
 }
 
 p {
-    font-size: 14px;
-    margin: 0px auto 16px auto;
+    margin: 0px auto;
     font-weight: 400;
     color: #363636;
+}
+
+.last {
+    margin: 0px;
 }
 
 .pill {
@@ -107,24 +135,31 @@ p {
     background-color: #001E36;
 }
 
-.wrapper {
-    max-width: 520px;
-    min-width: 120px;
-    text-align: left;
-    padding: 0px 20px 0px 20px;
-    margin: 80px auto 0px auto;
+.content {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
 }
 
-
-.content {
-    width: 100%;
-    margin: 0px auto;
+.padding-16 {
+    padding: 16px 0px;
 }
 
 .section {
-    margin: 48px auto;
+    margin: 52px auto;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section.horizontal {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     gap: 20px;
 }
@@ -133,7 +168,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
 }
 
 .fa {
@@ -152,6 +187,11 @@ p {
     opacity: 1;
 }
 
+.flag {
+    border-radius: 2px;
+    margin-left: 4px;
+}
+
 .link {
     color: #000000;
     font-weight: 600;
@@ -166,5 +206,5 @@ footer {
     padding: 20px 0px;
     color:rgb(168, 168, 168);
     font-size: 12px;
-    margin: 0px auto 0px auto;
+    margin: 80px auto 0px auto;
 }
