@@ -43,6 +43,10 @@ a:hover {
 
 .position {
     color: rgb(107, 107, 107);
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .year {
@@ -168,14 +172,15 @@ p {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    gap: 12px;
+    align-self: stretch;
 }
 
-.section .horizontal {
+.content.horizontal {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .fa {
