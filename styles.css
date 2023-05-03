@@ -43,25 +43,48 @@ a:hover {
 
 .position {
     color: rgb(107, 107, 107);
-    flex-grow: 1;
+    /* flex-grow: 1; */
     white-space: nowrap;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
 }
 
 .year {
     font-family: 'Fira Code', monospace;
+    white-space: nowrap;
 }
 
-.mainpic {
+.header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    height: 100%;
+    color: #363636;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-text.light {
+    color: #72788c;
+
+}
+
+.header-pic {
     background-image: url("images/dgc.png");
     background-size: cover;
-    height: 72px;
-    width: 72px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
 }
 
-.mainpic:hover {
+.header-pic:hover {
     background-image: url("images/dgc2.png");
 }
 
@@ -96,7 +119,7 @@ h5 {
 
 p {
     margin: 0px auto;
-    font-weight: 400;
+    font-weight: 300;
     color: #363636;
 }
 
@@ -146,6 +169,10 @@ p {
     background-color: #001E36;
 }
 
+.logobox.id {
+    background-color: #49021F;
+}
+
 .content {
     margin: 0px auto;
     display: flex;
@@ -154,6 +181,12 @@ p {
     gap: 16px;
     width: 100%;
     flex-wrap: wrap;
+}
+
+.content.big {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 135%;
 }
 
 .padding-16 {
@@ -172,7 +205,7 @@ p {
     margin: 0px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     align-self: stretch;
 }
@@ -205,13 +238,25 @@ p {
     margin-left: 4px;
 }
 
-.link {
+.item-name {
     color: #000000;
     font-weight: 600;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px;
+    white-space: nowrap;
+}
+
+.link {
+    color: #0d3ddb;
+}
+
+.line-separator {
+    background-color: #72788c;
+    height: 1px;
+    width: 100%;
+    opacity: 0.1;
 }
 
 footer {
@@ -221,3 +266,13 @@ footer {
     font-size: 12px;
     margin: 80px auto 0px auto;
 }
+
+
+@media only screen and (max-width: 360px) {
+    /* For mobile phones: */
+    .wrapper {
+        margin: 0px auto 0px auto;
+    }
+
+
+  }
