@@ -745,6 +745,10 @@ footer {
         height: 220px;
     }
 
+    .project-th-logo {
+        height: max-content;
+    }
+
 
   }
 
