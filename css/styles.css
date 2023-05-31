@@ -4,7 +4,6 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
     opacity: 1;
-    background-size: 10px 10px;
     line-height: 120%;
     font-size: 14px;
     line-height: 135%;
@@ -193,7 +192,8 @@ p {
 .project-th-logo {
     width: 28%;
     max-width: 180px;
-    margin: 6% 6% 6% 6%;
+    margin: 20% 6% 6% 6%;
+    height: max-content;
 }
 
 .project-th-mockup {
@@ -691,7 +691,7 @@ footer {
     /* For mobile: */
     .wrapper {
         margin: 0px auto 0px auto;
-        width: 100%;
+        width: auto;
     }
 
     .main-img {
