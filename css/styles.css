@@ -235,6 +235,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 40px auto;
 }
 
 .year {
@@ -567,6 +568,7 @@ p {
 
 .large-pic img {
     width: 100%;
+    margin: -10px 0px -10px 0px;
 }
 
 .textfield {
@@ -662,6 +664,30 @@ footer {
 }
 
 
+@media only screen and (max-width: 800px) {
+    /* For mobile: */
+    .wrapper {
+        margin: 0px auto 0px auto;
+    }
+
+    .main-img {
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+        border-radius: 12px;
+        margin: 0px -20px;
+
+    }
+}
+
+    @media only screen and (max-width: 580px) {
+        /* For mobile: */
+        .wrapper {
+            max-width: none;
+            margin: 0px auto 0px auto;
+        }
+    }
 
 
 @media only screen and (max-width: 360px) {
@@ -676,45 +702,35 @@ footer {
         background-position: center;
         height: 320px;
         border-radius: 0px;
-        margin: 0px -20px;
-        overflow: hidden;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-        transition: 0.1s;
-        transition-timing-function: ease-in-out;
+        margin: 0px;
+
     }
 
     .large-pic {
-        width: 95%;
+        width: 110%;
         background-image: url("images/iceland.png");
-        background-size: cover;
-        height: 20px;
-        border-radius: 8px;
-        margin: 0% -10%;
-        transform: rotate(-2deg);
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
+        height: 180px;
+        margin: 0% -5%;
+
+    }
+
+    .light {
+        white-space:normal;
+    }
+
+    .page-header {
+        margin: 20px auto 0px auto;
+    }
+
+    .section.horizontal .flex-row {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .section.horizontal .light{
+        white-space:nowrap;
     }
     
 
   }
 
-  @media only screen and (max-width: 800px) {
-    /* For mobile: */
-    .wrapper {
-        margin: 0px auto 0px auto;
-    }
-
-    .main-img {
-        width: auto;
-        background-size: cover;
-        background-position: center;
-        height: 320px;
-        border-radius: 12px;
-        margin: 0px -20px;
-        overflow: hidden;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-        transition: 0.1s;
-        transition-timing-function: ease-in-out;
-    }
-
-  }
