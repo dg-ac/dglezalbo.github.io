@@ -65,6 +65,23 @@ p {
     color: #363636;
 }
 
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .sm {
     font-size: 12px;
 }
@@ -655,6 +672,133 @@ form .button:active {
     transition-timing-function: ease-in-out;
 }
 
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    width: 140%;
+    margin: auto -20%;
+    align-items: center;
+  }
+  
+.flip-card {
+    background-color: transparent;
+    width: auto;
+    height: 224px;
+    perspective: 1000px;
+    border-radius: 12px;
+}
+
+.img-1 {
+    transform: rotate(2deg);
+}
+
+.img-2 {
+    transform: rotate(-2deg);
+    height: 208px;
+}
+
+.img-3 {
+    transform: rotate(4deg);
+}
+
+.img-4 {
+    transform: rotate(-3deg);
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+}
+  
+.flip-card-front {
+    background-color: #000;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #F4EACC;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: left;
+}
+
 footer {
     border-top: 1px solid rgb(243, 243, 243);
     padding: 20px 0px;
@@ -748,6 +892,17 @@ footer {
 
     .project-th-logo {
         height: max-content;
+    }
+
+    .grid-about {
+        grid-template-columns: 1fr 1fr;
+        width: 110%;
+        margin: auto -5%;
+    }
+
+    .flip-card img {
+        height: 100% !important;
+        width: max-content !important;
     }
 
 
