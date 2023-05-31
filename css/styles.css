@@ -265,7 +265,7 @@ p {
 }
 
 .header-pic {
-    background-image: url("/Users/danielgonzalezalbo/Documents/GitHub/dglezalbo.github.io/images/dgc.png");
+    background-image: url("../images/dgc.png");
     background-size: cover;
     height: 60px;
     width: 60px;
@@ -273,7 +273,7 @@ p {
 }
 
 .header-pic:hover {
-    background-image: url("/Users/danielgonzalezalbo/Documents/GitHub/dglezalbo.github.io/images/dgc2.png");
+    background-image: url("../images/dgc2.png");
     transition: 0.2s;
     transition-timing-function: ease-in-out;
 }
