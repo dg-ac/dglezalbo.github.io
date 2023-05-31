@@ -166,3 +166,20 @@
     text-decoration: none;  
     transition: 0.2s ease;  
   }
+
+
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile: */
+    .modal {
+        padding: 0px;
+    }
+  }
+
+
+  @media only screen and (max-width: 460px) {
+    /* For mobile: */
+    .modal {
+      padding: 0px;
+    }
+  }
