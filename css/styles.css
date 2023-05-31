@@ -1,0 +1,720 @@
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 10px 10px;
+    line-height: 120%;
+    font-size: 14px;
+    line-height: 135%;
+}
+
+a {
+    text-decoration: none;
+    color:#2F80ED;
+    font-weight: 400;
+}
+
+a.grey {
+    color:#72788c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+h1.large {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+h2 {
+    margin: 0px;
+    font-weight: 300;
+    color: rgb(168, 168, 168);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+
+}
+
+h4 {
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #AAAAAA;
+    margin: 5px auto 5px auto;
+}
+
+p {
+    margin: 0px;
+    font-weight: 400;
+    color: #363636;
+}
+
+.sm {
+    font-size: 12px;
+}
+
+.lg {
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.xl {
+    font-size: 22px;
+    line-height: 135%;
+}
+
+.xxl {
+    font-size: 28px;
+    line-height: 135%;
+}
+
+.grey {
+    color: #828282;
+}
+
+.mono {
+    font-family: 'Fira Code', monospace;
+}
+
+.spacer20 {
+    height: 20px;
+    width: 20px;
+}
+
+.spacer40 {
+    height: 40px;
+    width: 40px;
+}
+
+.spacer80 {
+    height: 80px;
+    width: 80px;
+}
+
+.gap4 {
+    gap: 4px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.wrapper {
+    max-width: 580px;
+    min-width: 120px;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+    margin: 0px auto 0px auto;
+}
+
+.wrapper.nopadding {
+    margin: 0px auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.company {
+    color: #000000;
+    font-weight: 600;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 16px;
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-item:hover {
+    background-color: #F2F2F2;
+    text-decoration: none;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-item:hover .project-th {
+    transform: scale(1.01);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-th {
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 160px;
+    width: 80%;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+.project-th-logo {
+    width: 28%;
+    max-width: 180px;
+    margin: 6% 6% 6% 6%;
+}
+
+.project-th-mockup {
+    max-width: 100%;
+    min-width: 232px;
+    margin: 6% -84px -60px auto;
+    filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.1));
+}
+
+.info-pic {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 4px;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 4px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #F2F2F2;
+    color: #828282;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.light {
+    color: #828282;
+    /* flex-grow: 1; */
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.year {
+    font-family: 'Fira Code', monospace;
+    white-space: nowrap;
+}
+
+.header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    height: 100%;
+    color: #363636;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-text.light {
+    color: #72788c;
+
+}
+
+.header-pic {
+    background-image: url("/Users/danielgonzalezalbo/Documents/GitHub/dglezalbo.github.io/images/dgc.png");
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.header-pic:hover {
+    background-image: url("/Users/danielgonzalezalbo/Documents/GitHub/dglezalbo.github.io/images/dgc2.png");
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.last {
+    margin: 0px;
+}
+
+.pill {
+    background-color: #7B61FF;
+    color: aquamarine;
+    padding: 2px 8px;
+    margin: auto 0px auto 12px;
+    border-radius: 4px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container:hover .logobox {
+    transform: scale(1.05);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.logobox {
+    height: 52px;
+    min-width: 52px;
+    box-sizing: border-box;
+    border: 1px solid rgba(130, 130, 130, 0.15);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+
+.logobox.figma{
+    background-color: #30333C;
+}
+
+.logobox.webflow {
+    background-color: #4353FF;
+}
+
+.logobox.ps {
+    background-color: #001E36;
+}
+
+.logobox.id {
+    background-color: #49021F;
+}
+
+.logobox.openai {
+    background-color: #74AA9C;
+}
+
+
+
+.content {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content.big {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 135%;
+}
+
+.padding-16 {
+    padding: 16px 0px;
+}
+
+.section {
+    margin: 52px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section.horizontal {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    background-color: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: -8px -12px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.section.horizontal:hover {
+    text-decoration: none;
+    background-color: #F2F2F2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.content.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.fa {
+    font-size: 20px;
+    margin-right: 15px;
+    opacity: 0.4;
+    width: auto;
+    border-radius: 3px;
+    text-align: center;
+    color: #7B61FF;
+
+}
+
+.fa:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.flag {
+    border-radius: 2px;
+    margin-left: 4px;
+}
+
+.item-name {
+    color: #000000;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.link {
+    color: #2F80ED;
+}
+
+.line-separator {
+    background-color: #72788c;
+    height: 1px;
+    width: 100%;
+    opacity: 0.1;
+}
+
+.badge {
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 5px;
+    color: #000000;
+
+}
+
+.badge:hover {
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+}
+
+.badge:active {
+    border: 1px solid #BDBDBD;
+}
+
+.green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #27AE60;
+    border-radius: 10px;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    
+}
+
+.gallery.single {
+    grid-template-columns: 1fr;    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.grid.single {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+}
+
+.main-img {
+    width: 140%;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 12px;
+    margin: 0% -20%;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.main-img:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.article-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.article-img.expandable {
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.article-img.expandable:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.article-img.gallery {
+    border-radius: 0px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.article-img.gallery:hover {
+    filter: contrast(80%);
+    transform: none;
+}
+
+.large-pic {
+    width: 120%;
+    background-image: url("images/iceland.png");
+    background-size: cover;
+    height: 400px;
+    border-radius: 8px;
+    margin: 0% -10%;
+    transform: rotate(-2deg);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.large-pic img {
+    width: 100%;
+}
+
+.textfield {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+    color: #000000;
+    margin-top: 4px;
+    min-height: 18px;
+}
+
+.textfield:hover {
+    border: 1px solid #828282;
+}
+
+.textfield:focus {
+    border: 1px solid #2F80ED;
+}
+
+.textfield:active {
+    border: 1px solid #FF0000;
+}
+
+.textfield::placeholder {
+    color: #BDBDBD;
+}
+
+.textfield.multi {
+    min-height: 200px;
+}
+
+form .button {
+    background-color: #2F80ED;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    min-height: 18px;
+
+}
+
+form .button:hover {
+    background-color: #266ecd;
+}
+
+form .button:active {
+    background-color: #1f60b5;
+}
+
+.success-message {
+    color: #219653;
+}
+
+.error {
+    color: red;
+    display: none;
+    margin-top: 5px;
+  }
+
+.back-button {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    color: #BDBDBD;
+    transition: 0.05s;
+    transition-timing-function: ease-in-out;
+}
+
+.back-button:hover {
+    gap: 6px;
+    margin-left: -4px;
+    text-decoration: none;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+footer {
+    border-top: 1px solid rgb(243, 243, 243);
+    padding: 20px 0px;
+    color:rgb(168, 168, 168);
+    font-size: 12px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    color: #333333;
+    width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 360px) {
+    /* For mobile: */
+    .wrapper {
+        margin: 0px auto 0px auto;
+    }
+
+    .main-img {
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+        border-radius: 0px;
+        margin: 0px -20px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+        transition: 0.1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .large-pic {
+        width: 95%;
+        background-image: url("images/iceland.png");
+        background-size: cover;
+        height: 20px;
+        border-radius: 8px;
+        margin: 0% -10%;
+        transform: rotate(-2deg);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* For mobile: */
+    .wrapper {
+        margin: 0px auto 0px auto;
+    }
+
+    .main-img {
+        width: auto;
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+        border-radius: 12px;
+        margin: 0px -20px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+        transition: 0.1s;
+        transition-timing-function: ease-in-out;
+    }
+
+  }
