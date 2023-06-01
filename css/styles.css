@@ -136,6 +136,18 @@ p {
     gap: 16px;
 }
 
+.gap20 {
+    gap: 20px;
+}
+
+.gap24 {
+    gap: 24px;
+}
+
+.gap44 {
+    gap: 44px;
+}
+
 .wrapper {
     max-width: 580px;
     min-width: 120px;
@@ -185,6 +197,22 @@ p {
 
 .project-item:hover .project-th {
     transform: scale(1.01);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-related {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 16px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-related:hover {
+    text-decoration: none;
+    transform: translateY(-4px);
     transition: 0.2s;
     transition-timing-function: ease-in-out;
 }
@@ -889,7 +917,7 @@ footer {
 
     .project-th {
         width: 100%;
-        height: 220px;
+        height: 200px;
     }
 
     .project-th-logo {
@@ -906,6 +934,19 @@ footer {
             height: 100% !important;
             width: 100%;
             object-fit: cover;
+    }
+
+    .section .flex-row.gap44 {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    footer .spacer20 {
+        display: none;
     }
 
 
