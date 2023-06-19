@@ -7,6 +7,9 @@ body {
     line-height: 120%;
     font-size: 14px;
     line-height: 135%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -149,11 +152,13 @@ p {
 }
 
 .wrapper {
-    max-width: 580px;
+    width: 660px;
+    max-width: 660px;
     min-width: 120px;
     text-align: left;
     padding: 0px 20px 0px 20px;
     margin: 0px auto 0px auto;
+    flex: 1;
 }
 
 .wrapper.nopadding {
@@ -223,7 +228,7 @@ p {
     background-position: center;
     overflow: hidden;
     border-radius: 8px;
-    height: 160px;
+    height: 180px;
     width: 80%;
     position: relative;
     text-decoration: none;
@@ -848,6 +853,7 @@ footer {
     white-space: nowrap;
     color: #333333;
     width: 100%;
+    max-width: 660px;
 }
 
 
