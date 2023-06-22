@@ -867,7 +867,7 @@ footer {
     /* For mobile: */
     .wrapper {
         margin: 0px auto 0px auto;
-        width: 100%;
+        width: auto;
     }
 
     .main-img {
@@ -953,6 +953,7 @@ footer {
         margin: 0px 20px;
         flex-direction: column;
         gap: 4px;
+        width: auto;
     }
 
     footer .spacer20 {
