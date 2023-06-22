@@ -844,6 +844,9 @@ form .button:active {
 }
 
 footer {
+    width: 660px;
+    max-width: 660px;
+    min-width: 120px;
     border-top: 1px solid rgb(243, 243, 243);
     padding: 20px 0px;
     color:rgb(168, 168, 168);
@@ -853,35 +856,18 @@ footer {
     justify-content: space-between;
     white-space: nowrap;
     color: #333333;
-    width: 100%;
-    max-width: 660px;
-}
-
-
-@media only screen and (max-width: 800px) {
-    /* For mobile: */
-    .wrapper {
-        margin: 0px auto 0px auto;
-    }
-
-    .main-img {
-        width: auto;
-        background-size: cover;
-        background-position: center;
-        height: 320px;
-        border-radius: 12px;
-        margin: 0px -20px;
-
-    }
 }
 
 
 
-@media only screen and (max-width: 460px) {
+
+
+
+@media only screen and (max-width: 740px) {
     /* For mobile: */
     .wrapper {
         margin: 0px auto 0px auto;
-        width: auto;
+        width: 100%;
     }
 
     .main-img {
@@ -964,6 +950,7 @@ footer {
     }
 
     footer {
+        margin: 0px 20px;
         flex-direction: column;
         gap: 4px;
     }
