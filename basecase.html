@@ -14,6 +14,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="fade-in">
+    <!-- hidden navbar starts here -->
+    <div class="navbar hidden">
+      <a href="index.html" class="navbar-name-container">
+        <div class="avatar small"></div>
+        <div class="flex-row gap8">
+          <p>Daniel González-Albo</p>
+          <div class="light">Product Designer</div>
+        </div>
+      </a>
+      <div class="navbar-links-container">
+        <a class="navbar-link" href="/about.html">About</a>
+        <a class="navbar-link active" href="/projects.html">Projects</a>
+        <a class="navbar-link" href="/stack.html">Stack</a>
+        <a class="cta" href="/contact.html">Get in touch</a>
+      </div>
+    </div>
+    <!-- hidden navbar ends here -->
+
     <div class="wrapper">
       <div class="page-header">
         <a class="back-button" href="index.html"
@@ -181,15 +199,44 @@
     </div>
 
     <footer>
-      <div class="flex-row gap16">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="stack.html">Stack</a>
-        <a href="contact.html">Contact</a>
+      <div class="flex-column gap8" style="min-width: 100px">
+        <p style="font-weight: 500">Explore</p>
+        <div class="flex-column gap8">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="stack.html">Stack</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="flex-column gap8" style="min-width: 100px">
+        <p style="font-weight: 500">Connect</p>
+        <div class="flex-column gap8">
+          <a
+            href="https://www.linkedin.com/in/danielgonzalezalbo/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://read.cv/dgac" target="_blank">read.cv</a>
+          <a href="https://www.behance.net/dgac" target="_blank">Behance</a>
+          <a href="https://www.instagram.com/_dglzb/" target="_blank"
+            >Instagram</a
+          >
+        </div>
       </div>
       <div class="spacer20" style="width: 100%"></div>
-      <p>Last update: June 2023</p>
+      <div class="flex-column gap8">
+        <p>© 2023 Daniel González-Albo</p>
+        <div class="copy-email-container">
+          <div class="email-text" id="email">
+            <p>hi@dg-ac.com</p>
+            <img src="images/copy.svg" height="14px" />
+          </div>
+          <div class="copied-text" id="copied-text">Copied!</div>
+        </div>
+      </div>
     </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
