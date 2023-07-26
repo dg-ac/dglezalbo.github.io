@@ -21,6 +21,22 @@ const closeMenu = function () {
   menuContainer.style.top = `-145px`;
 };
 
-menuButton.addEventListener("click", openMenu);
+menuButton.addEventListener("click", function () {
+  if (menuContainer.style.display === `flex`) {
+    menuContainer.style.display = `none`;
+    menuContainer.style.top = `-145px`;
+  } else {
+    menuContainer.style.display = `flex`;
+    menuContainer.style.top = `0px`;
+  }
+});
+
+// menuButton.addEventListener("mouseenter", function () {
+//   menuButton.classList.add("menu-button-active");
+// });
+
+// menuButton.addEventListener("mouseleave", function () {
+//   menuButton.classList.remove("menu-button-active");
+// });
 
 window.addEventListener("scroll", closeMenu);
