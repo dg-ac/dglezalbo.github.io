@@ -301,10 +301,26 @@ p {
   white-space: nowrap;
 }
 
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 99;
+  top: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  height: 64px;
+  color: #363636;
+  transition: ease-in-out 0.2s;
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
-  position: fixed;
+  position: relative;
   z-index: 99;
   top: 0px;
   width: 100%;
@@ -339,12 +355,16 @@ p {
 }
 
 .navbar-link {
+  display: flex;
+  align-items: center;
+  height: 36px;
   background-color: none;
   border-radius: 24px;
   padding: 8px 12px;
   transition: ease-in-out 0.3s;
   color: #363636;
   outline: 0px solid rgb(243, 243, 243);
+  box-sizing: border-box;
 }
 
 .navbar-link:hover {
@@ -359,6 +379,9 @@ p {
 }
 
 .cta {
+  display: flex;
+  align-items: center;
+  height: 36px;
   outline: 1px solid #e0e0e0;
   padding: 8px 12px;
   background-color: none;
@@ -366,6 +389,7 @@ p {
   transition: ease-in-out 0.3s;
   color: #363636;
   margin-left: 12px;
+  box-sizing: border-box;
 }
 
 .cta:hover {
@@ -373,6 +397,53 @@ p {
   color: white;
   transition: ease-in-out 0.3s;
   text-decoration: none;
+}
+
+.menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  padding: 8px 12px;
+  background-color: none;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #363636;
+  box-sizing: border-box;
+}
+
+.menu-button:hover {
+  background-color: #f1f1f1;
+  transition: ease-in-out 0.3s;
+}
+
+.menu-button:active {
+  background-color: #e0e0e0;
+  transition: ease-in-out 0.3s;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  padding: 16px;
+  background-color: white;
+  transition: display 0.3s, top 0.3s;
+  box-sizing: border-box;
+  top: -145px;
+}
+
+.menu-link {
+  color: #333333;
+  white-space: nowrap;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
 }
 
 .hidden {
@@ -1041,6 +1112,14 @@ footer a:hover {
 
   .navbar-links-container {
     display: none;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .menu-container {
+    top: -200px;
   }
 
   .page-header {
