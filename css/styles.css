@@ -434,7 +434,7 @@ p {
   background-color: white;
   transition: display 0.3s, top 0.3s;
   box-sizing: border-box;
-  top: -145px;
+  top: -200px;
 }
 
 .menu-link {
