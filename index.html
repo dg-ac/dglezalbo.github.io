@@ -30,7 +30,7 @@
       <div class="navbar">
         <a href="index.html" class="navbar-name-container">
           <div class="avatar small"></div>
-          <div class="flex-row gap8">
+          <div class="flex-column gap2">
             <p>Daniel González-Albo</p>
             <div class="light">Product Designer</div>
           </div>
@@ -38,8 +38,6 @@
 
         <div class="navbar-links-container">
           <a class="navbar-link" href="/about.html">About</a>
-          <a class="navbar-link" href="/projects.html">Projects</a>
-          <a class="navbar-link" href="/stack.html">Stack</a>
           <a class="cta" href="/contact.html">Get in touch</a>
         </div>
         <a class="menu-button">
@@ -49,8 +47,6 @@
       <div class="menu-container">
         <a class="menu-link" href="/index.html">Home</a>
         <a class="menu-link" href="/about.html">About</a>
-        <a class="menu-link" href="/projects.html">Projects</a>
-        <a class="menu-link" href="/stack.html">Stack</a>
         <a class="menu-link" href="/contact.html">Get in touch</a>
       </div>
     </div>
@@ -62,143 +58,145 @@
           <div class="avatar"></div>
           <div class="lg">
             Daniel González-Albo<br />
-            <div class="header-text light">Product Designer</div>
+            <div class="header-text grey">Product Designer</div>
           </div>
         </div>
       </div>
       <div class="section" id="first">
-        <div class="xl">
-          <p style="font-weight: 300">
-            Hi there! I'm <strong>Daniel</strong>, a
-            <strong>Product Designer</strong> based in Berlin. I have a strong
-            passion for creating visually appealing and functional designs, and
-            I specialize in various areas such as product design, web design and
-            photography. I'm currently helping build
-            <a
-              href="https://terramate.io/docs/cli/"
-              target="_blank"
-              style="color: #dc5c72; font-weight: bold"
-              >Terramate</a
-            >, a tool that helps implement and maintain highly scalable
-            Terraform projects.
-          </p>
+        <div class="xl flex-column gap20" id="intro">
+          <div><strong>Hi there! I'm Daniel</strong>.</div>
+          <div>
+            I'm a Product Designer based in Berlin. I have a strong passion for
+            creating visually appealing and functional designs, and I specialize
+            in various areas such as product design, web design and photography.
+          </div>
+          <div class="grey">
+            I'm currently working as Head of Design at Terramate, a tool that
+            helps implement and maintain highly scalable Terraform projects.
+          </div>
         </div>
-        <div class="flex-row gap8" style="flex-wrap: wrap">
+        <div class="flex-row gap12" style="flex-wrap: wrap">
           <!-- <a class="badge" href="contact.html"
             ><img class="blink-image" src="images/green-dot.svg" />Open to new
             opportunities</a
           > -->
-          <a class="badge" href="https://terramate.io/docs/cli/" target="_blank"
-            ><img
-              src="images/terramate_logo.png"
-              height="14px"
-              style="border-radius: 2px"
-            />Head of Design at Terramate</a
+
+          <a class="badge" href="https://github.com/dg-ac" target="_blank">
+            <div class="tooltip">GitHub</div>
+            <img src="images/icon-github.svg"
+          /></a>
+          <a
+            class="badge"
+            href="https://www.linkedin.com/in/danielgonzalezalbo/"
+            target="_blank"
           >
-          <a class="badge" href="about.html"
-            ><img src="images/cv.svg" height="14px" />About</a
-          >
+            <div class="tooltip">LinkedIn</div>
+            <img src="images/icon-linkedin.svg"
+          /></a>
+          <a class="badge" href="https://read.cv/dgac" target="_blank">
+            <div class="tooltip">read.cv</div>
+            <img src="images/icon-readcv.svg" />
+          </a>
         </div>
       </div>
 
+      <div class="line-separator"></div>
+
+      <!--  work -->
+
       <div class="section">
-        <h3>Work</h3>
-        <div class="content">
-          <div class="grid single">
-            <a href="equalto-sheets.html" class="project-item">
-              <div
-                class="project-th"
-                style="background-image: url(images/home-th\ sheets.png)"
-              ></div>
-              <div class="flex-column gap4">
-                <p class="lg"><strong>Equalto Sheets</strong></p>
-                <p class="grey">
-                  Sheets is the result of a business pivot, where we decided to
-                  shift our focus to spreadsheet-based dev tools.
-                </p>
-                <div class="spacer20" style="height: 100%"></div>
-                <p>2023</p>
+        <div class="flex-row w-full j-content-space-between">
+          <h3>Work</h3>
+          <div class="flex-row gap4">
+            <a class="carousel-control left" id="prev"
+              ><i data-lucide="chevron-left"></i
+            ></a>
+            <a class="carousel-control right" id="next"
+              ><i data-lucide="chevron-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="content wide">
+          <div class="flex-row gap12 carousel" id="carousel">
+            <!-- <div class="gradient-overlay"></div> -->
+            <a href="terramate.html" class="project-item gap12">
+              <div class="project-th">
+                <img src="images/thumbnail_terramate.png" />
+              </div>
+              <div class="flex-column gap4 lg" style="margin: 0px 12px">
+                <strong>Terramate</strong>
+                <span class="light-grey">2023 –</span>
               </div>
             </a>
-            <a href="equalto.html" class="project-item">
-              <div
-                class="project-th"
-                style="background-image: url(images/home-th\ equalto.png)"
-              ></div>
-              <div class="flex-column gap4">
-                <p class="lg"><strong>Equalto</strong></p>
-                <p class="grey">
-                  For 3+ years I've worked at EqualTo, where I've led the Design
-                  team and helped develop the core product.
-                </p>
-                <div class="spacer20" style="height: 100%"></div>
-                <p>2020–2022</p>
+            <a href="sheets.html" class="project-item gap12">
+              <div class="project-th">
+                <img src="images/thumbnail_sheets.png" />
+              </div>
+              <div class="flex-column gap4 lg" style="margin: 0px 12px">
+                <strong>EqualTo</strong>
+                <span class="light-grey">2023</span>
               </div>
             </a>
-            <a href="basecase.html" class="project-item">
-              <div
-                class="project-th"
-                style="background-image: url(images/home-th\ basecase.png)"
-              ></div>
-              <div class="flex-column gap4">
-                <p class="lg"><strong>BaseCase</strong></p>
-                <p class="grey">
-                  At BaseCase, I spent nearly 4 years designing apps for tablets
-                  and mobile devices.
-                </p>
-                <div class="spacer20" style="height: 100%"></div>
-                <p>2016–2020</p>
+            <a href="equalto.html" class="project-item gap12">
+              <div class="project-th">
+                <img src="images/thumbnail_equalto.png" />
+              </div>
+              <div class="flex-column gap4 lg" style="margin: 0px 12px">
+                <strong>EqualTo Commissions</strong>
+                <span class="light-grey">2020 – 2023</span>
+              </div>
+            </a>
+            <a href="basecase.html" class="project-item gap12">
+              <div class="project-th">
+                <img src="images/thumbnail_basecase.png" />
+              </div>
+              <div class="flex-column gap4 lg" style="margin: 0px 12px">
+                <strong>BaseCase</strong>
+                <span class="light-grey">2016 – 2020</span>
               </div>
             </a>
           </div>
         </div>
-        <a class="link" href="projects.html">See all projects</a>
       </div>
 
+      <div class="line-separator"></div>
+
+      <!-- side projects -->
+
       <div class="section">
-        <h3>Stack</h3>
-        <div class="content">
-          <div class="grid">
-            <div class="logo-container">
-              <div class="logobox">
-                <img src="images/figma.png" height="100%" />
+        <div class="flex-row w-full j-content-space-between">
+          <h3>Side projects</h3>
+        </div>
+
+        <div class="content wide">
+          <div class="grid-3">
+            <a href="ironcalc.html" class="project-item gap12">
+              <div class="project-th">
+                <img src="images/thumbnail_ironcalc.png" />
               </div>
-              <div class="flex-column">
-                <p>Figma</p>
-                <p class="light">Product Design</p>
+              <div class="flex-column gap4 lg" style="margin: 0px 12px">
+                <strong>IronCalc</strong>
+                <span class="light-grey">2024</span>
               </div>
-            </div>
-            <div class="logo-container">
-              <div class="logobox">
-                <img src="images/webflow.png" height="100%" />
-              </div>
-              <div class="flex-column">
-                <p>Webflow</p>
-                <p class="light">Web Design</p>
-              </div>
-            </div>
-            <div class="logo-container">
-              <div class="logobox">
-                <img src="images/notion.png" height="100%" />
-              </div>
-              <div class="flex-column">
-                <p>Notion</p>
-                <p class="light">Project Management</p>
-              </div>
-            </div>
-            <div class="logo-container">
-              <div class="logobox">
-                <img src="images/openai.png" height="100%" />
-              </div>
-              <div class="flex-column">
-                <p>ChatGPT</p>
-                <p class="light">Everything else</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-        <a class="link" href="stack.html">See all tools</a>
       </div>
+
+      <div class="line-separator"></div>
+
+      <!-- personal -->
+
+      <!-- <div class="section">
+        <div class="flex-row w-full j-content-space-between">
+          <h3>Personal</h3>
+        </div>
+
+        <div class="content">Link to gallery /</div>
+      </div>
+
+      <div class="line-separator"></div> -->
     </div>
 
     <footer>
@@ -207,39 +205,38 @@
         <div class="flex-column gap8">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="stack.html">Stack</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
       <div class="flex-column gap8" style="min-width: 100px">
         <p style="font-weight: 500">Connect</p>
         <div class="flex-column gap8">
+          <a href="https://github.com/dg-ac" target="_blank">GitHub</a>
           <a
             href="https://www.linkedin.com/in/danielgonzalezalbo/"
             target="_blank"
             >LinkedIn</a
           >
           <a href="https://read.cv/dgac" target="_blank">read.cv</a>
-          <a href="https://www.behance.net/dgac" target="_blank">Behance</a>
-          <a href="https://www.instagram.com/_dglzb/" target="_blank"
-            >Instagram</a
-          >
         </div>
       </div>
       <div class="spacer20" style="width: 100%"></div>
       <div class="flex-column gap8">
-        <p>© 2023 Daniel González-Albo</p>
+        <p>© 2024 Daniel González-Albo</p>
         <div class="copy-email-container">
-          <div class="email-text" id="email">
+          <div class="email-text grey" id="email">
             <p>hi@dg-ac.com</p>
-            <img src="images/copy.svg" height="14px" />
+            <i data-lucide="copy"></i>
           </div>
           <div class="copied-text" id="copied-text">Copied!</div>
         </div>
       </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
   </body>

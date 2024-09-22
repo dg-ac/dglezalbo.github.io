@@ -19,7 +19,7 @@
       <div class="navbar">
         <a href="index.html" class="navbar-name-container">
           <div class="avatar small"></div>
-          <div class="flex-row gap8">
+          <div class="flex-column gap2">
             <p>Daniel González-Albo</p>
             <div class="light">Product Designer</div>
           </div>
@@ -27,8 +27,6 @@
 
         <div class="navbar-links-container">
           <a class="navbar-link active" href="/about.html">About</a>
-          <a class="navbar-link" href="/projects.html">Projects</a>
-          <a class="navbar-link" href="/stack.html">Stack</a>
           <a class="cta" href="/contact.html">Get in touch</a>
         </div>
         <a class="menu-button">
@@ -38,8 +36,6 @@
       <div class="menu-container">
         <a class="menu-link" href="/index.html">Home</a>
         <a class="menu-link" href="/about.html">About</a>
-        <a class="menu-link" href="/projects.html">Projects</a>
-        <a class="menu-link" href="/stack.html">Stack</a>
         <a class="menu-link" href="/contact.html">Get in touch</a>
       </div>
     </div>
@@ -47,10 +43,11 @@
 
     <div class="wrapper">
       <div class="page-header">
-        <a class="back-button" href="index.html"
-          ><img src="images/arrow-left 2.svg" height="16px" />Back to home</a
-        >
-        About
+        <div class="flex-row gap8 a-items-center">
+          <a class="breadcrumb-button" href="index.html">Home</a>
+          <p class="light-grey">›</p>
+          <p class="breadcrumb-button active">About</p>
+        </div>
       </div>
 
       <div class="section">
@@ -75,7 +72,6 @@
                 <img
                   src="images/copenhagen.png"
                   alt="Superkilen. Copenhagen (Denmark), 2021"
-                  style="width: 100%; margin: -0.5px"
                 />
               </div>
               <div class="flip-card-back">
@@ -90,7 +86,6 @@
                 <img
                   src="images/kiev.png"
                   alt="St. Michael's Golden-Domed Monastery. Kiev (Ukraine), 2019"
-                  style="width: 100%"
                 />
               </div>
               <div class="flip-card-back">
@@ -107,7 +102,6 @@
                 <img
                   src="images/acatenango.png"
                   alt="Volcán Fuego desde Acatenango. Guatemala, 2023"
-                  style="width: 100%"
                 />
               </div>
               <div class="flip-card-back">
@@ -152,10 +146,8 @@
                   class="item-name"
                   href="https://terramate.io/docs/cli/"
                   target="_blank"
-                  >Terramate<img
-                    src="images/arrow-up-right 1.svg"
-                    height="16px"
-                /></a>
+                  >Terramate<i data-lucide="arrow-up-right"></i
+                ></a>
                 <span class="light">Head of Design</span>
               </div>
             </div>
@@ -173,8 +165,8 @@
                   class="item-name"
                   href="https://www.equalto.com/"
                   target="_blank"
-                  >EqualTo<img src="images/arrow-up-right 1.svg" height="16px"
-                /></a>
+                  >EqualTo<i data-lucide="arrow-up-right"></i
+                ></a>
                 <span class="light">Head of Design</span>
               </div>
             </div>
@@ -192,9 +184,8 @@
                   class="item-name"
                   href="https://basecase.com/"
                   target="_blank"
-                  >BaseCase
-                  <img src="images/arrow-up-right 1.svg" height="16px"
-                /></a>
+                  >BaseCase <i data-lucide="arrow-up-right"></i
+                ></a>
                 <span class="light">Sr UI Designer</span>
               </div>
             </div>
@@ -212,8 +203,8 @@
                   class="item-name"
                   href="https://www.abbvie.com/"
                   target="_blank"
-                  >AbbVie <img src="images/arrow-up-right 1.svg" height="16px"
-                /></a>
+                  >AbbVie <i data-lucide="arrow-up-right"></i
+                ></a>
                 <span class="light">IT Analyst / UI Designer</span>
               </div>
             </div>
@@ -222,6 +213,7 @@
           </div>
         </div>
       </div>
+      <div class="line-separator"></div>
 
       <div class="section">
         <div class="title">
@@ -237,10 +229,8 @@
                 >Univ. San Pablo-CEU<img
                   class="flag"
                   src="images/es.svg"
-                  height="10px" /><img
-                  src="images/arrow-up-right 1.svg"
-                  height="16px"
-              /></a>
+                  height="10px" /><i data-lucide="arrow-up-right"></i
+              ></a>
               <span class="light">Bachelor in Marketing</span>
             </div>
             <div class="line-separator"></div>
@@ -252,10 +242,8 @@
                 >Linnéuniversitetet<img
                   class="flag"
                   src="images/se.svg"
-                  height="10px" /><img
-                  src="images/arrow-up-right 1.svg"
-                  height="16px"
-              /></a>
+                  height="10px" /><i data-lucide="arrow-up-right"></i
+              ></a>
               <span class="light">Erasmus stay</span>
             </div>
             <div class="line-separator"></div>
@@ -270,10 +258,8 @@
                 >Univ. San Pablo-CEU<img
                   class="flag"
                   src="images/es.svg"
-                  height="10px" /><img
-                  src="images/arrow-up-right 1.svg"
-                  height="16px"
-              /></a>
+                  height="10px" /><i data-lucide="arrow-up-right"></i
+              ></a>
               <span class="light">Bachelor in Advertising and PR</span>
             </div>
             <div class="line-separator"></div>
@@ -281,6 +267,7 @@
           </div>
         </div>
       </div>
+      <div class="line-separator"></div>
 
       <div class="section">
         <div class="title">
@@ -310,6 +297,7 @@
           </div>
         </div>
       </div>
+      <div class="line-separator"></div>
     </div>
 
     <footer>
@@ -318,29 +306,26 @@
         <div class="flex-column gap8">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="stack.html">Stack</a>
+
           <a href="contact.html">Contact</a>
         </div>
       </div>
       <div class="flex-column gap8" style="min-width: 100px">
         <p style="font-weight: 500">Connect</p>
         <div class="flex-column gap8">
+          <a href="https://github.com/dg-ac" target="_blank">GitHub</a>
+
           <a
             href="https://www.linkedin.com/in/danielgonzalezalbo/"
             target="_blank"
             >LinkedIn</a
           >
           <a href="https://read.cv/dgac" target="_blank">read.cv</a>
-          <a href="https://www.behance.net/dgac" target="_blank">Behance</a>
-          <a href="https://www.instagram.com/_dglzb/" target="_blank"
-            >Instagram</a
-          >
         </div>
       </div>
       <div class="spacer20" style="width: 100%"></div>
       <div class="flex-column gap8">
-        <p>© 2023 Daniel González-Albo</p>
+        <p>© 2024 Daniel González-Albo</p>
         <div class="copy-email-container">
           <div class="email-text" id="email">
             <p>hi@dg-ac.com</p>
@@ -350,6 +335,11 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
     <script src="js/navbar.js"></script>
     <script src="js/script.js"></script>
   </body>

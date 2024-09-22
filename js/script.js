@@ -20,3 +20,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
   });
 });
+
+// carousel
+
+const carousel = document.getElementById("carousel");
+const items = carousel.children;
+let currentIndex = 0;
+
+function updateCarousel() {
+  const itemWidth = items[0].offsetWidth + 12; // Width of item + margin
+  carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+document.getElementById("next").addEventListener("click", () => {
+  if (currentIndex < items.length - 1) {
+    // Allow navigation until the last item
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+// Initialize carousel
+updateCarousel();
