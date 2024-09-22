@@ -1339,11 +1339,16 @@ footer a:hover {
   /* For mobile: */
   .wrapper {
     margin: 0px auto 0px auto;
-    width: auto;
+    width: 100%;
   }
 
   #mobile-hidden {
     display: none;
+  }
+
+  .content.wide {
+    margin: 0px -20px;
+    padding-left: 20px;
   }
 
   .main-img {
