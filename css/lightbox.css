@@ -118,9 +118,8 @@ img.hover-shadow {
   color: black;
   position: absolute;
   top: 10px;
-  right: 25px;
+  right: 10px;
   font-size: 35px;
-  font-weight: bold;
   padding: 0px 5px 5px 5px;
 }
 
@@ -129,6 +128,18 @@ img.hover-shadow {
   color: #999;
   text-decoration: none;
   cursor: pointer;
+}
+
+.close .lucide {
+  color: var(--dark);
+  height: 32px;
+  width: 32px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.close:hover .lucide {
+  background-color: var(--grey-200);
 }
 
 .previous,

@@ -19,33 +19,59 @@ document.addEventListener("DOMContentLoaded", function () {
       copiedText.style.top = "-54px";
     }, 500);
   });
-});
 
-// carousel
+  // Swipe functionality
+  let startX = 0;
+  let endX = 0;
 
-const carousel = document.getElementById("carousel");
-const items = carousel.children;
-let currentIndex = 0;
+  const carousel = document.getElementById("carousel");
+  const items = carousel.children;
+  let currentIndex = 0;
 
-function updateCarousel() {
-  const itemWidth = items[0].offsetWidth + 12; // Width of item + margin
-  carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-}
-
-document.getElementById("next").addEventListener("click", () => {
-  if (currentIndex < items.length - 1) {
-    // Allow navigation until the last item
-    currentIndex++;
-    updateCarousel();
+  function updateCarousel() {
+    const itemWidth = items[0].offsetWidth + 12; // Width of item + margin
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   }
-});
 
-document.getElementById("prev").addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
-});
+  carousel.addEventListener("touchstart", (event) => {
+    startX = event.touches[0].clientX;
+  });
 
-// Initialize carousel
-updateCarousel();
+  carousel.addEventListener("touchmove", (event) => {
+    endX = event.touches[0].clientX;
+  });
+
+  carousel.addEventListener("touchend", () => {
+    if (startX > endX + 50) {
+      // Swipe left
+      if (currentIndex < items.length - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    } else if (startX < endX - 50) {
+      // Swipe right
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    }
+  });
+
+  document.getElementById("next").addEventListener("click", () => {
+    if (currentIndex < items.length - 1) {
+      // Allow navigation until the last item
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  document.getElementById("prev").addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  // Initialize carousel
+  updateCarousel();
+});

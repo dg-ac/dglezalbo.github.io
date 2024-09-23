@@ -20,7 +20,7 @@
       <div class="navbar">
         <a href="index.html" class="navbar-name-container">
           <div class="avatar small"></div>
-          <div class="flex-column gap2">
+          <div class="flex-column gap4">
             <p>Daniel González-Albo</p>
             <div class="light">Product Designer</div>
           </div>
@@ -254,29 +254,37 @@
       <!-- The modal starts here -->
 
       <div id="Lightbox" class="modal" onclick="closeLightbox()">
-        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <span class="close pointer" onclick="closeLightbox()"
+          ><i data-lucide="x"></i
+        ></span>
         <div class="modal-content">
           <div class="slide">
             <img src="images/chat_01.png" class="image-slide" />
+            <p class="slide-caption">EqualTo Chat</p>
           </div>
           <div class="slide">
             <img src="images/suresheet_01.png" class="image-slide" />
+            <p class="slide-caption">EqualTo Suresheet</p>
           </div>
           <div class="slide">
             <img src="images/collab_01.png" class="image-slide" />
+            <p class="slide-caption">EqualTo SureSheet Collab API</p>
           </div>
           <div class="slide">
             <img src="images/sheets-website-01.png" class="image-slide" />
-            <p class="slide-caption">equalto.com</p>
+            <p class="slide-caption">equalto.com – Hero</p>
           </div>
           <div class="slide">
             <img src="images/sheets-website-02.png" class="image-slide" />
+            <p class="slide-caption">equalto.com – Index illustration</p>
           </div>
           <div class="slide">
             <img src="images/sheets-website-03.png" class="image-slide" />
+            <p class="slide-caption">equalto.com – Cards</p>
           </div>
           <div class="slide">
             <img src="images/sheets-website-04.png" class="image-slide" />
+            <p class="slide-caption">equalto.com – About us page</p>
           </div>
         </div>
       </div>
@@ -350,7 +358,7 @@
       <div class="spacer20" style="width: 100%"></div>
       <div class="flex-column gap8">
         <p>© 2024 Daniel González-Albo</p>
-        <div class="copy-email-container">
+        <div class="copy-email-container" id="mobile-hidden">
           <div class="email-text" id="email">
             <p>hi@dg-ac.com</p>
             <img src="images/copy.svg" height="14px" />
