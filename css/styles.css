@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -1341,7 +1342,7 @@ form .button:active {
 }
 
 footer {
-  width: 540px;
+  width: 100vh;
   max-width: 540px;
   min-width: 120px;
   /* border-top: 1px solid rgb(243, 243, 243); */
@@ -1529,56 +1530,60 @@ footer a:hover {
   z-index: 9;
   text-align: center;
   cursor: grab;
-  max-width: 20%;
+  max-width: 12%;
 }
 
 .mydivheader {
   cursor: grabbing;
   z-index: 10;
   color: #fff;
+  width: 100%;
   max-height: 64px;
   max-width: 64px;
+  min-width: 34px;
   transition: 0.2s ease-in-out;
+  object-fit: contain;
 }
 
 .div1 {
-  top: 120px;
-  left: 100px;
+  top: 30%;
+  left: 24%;
   transform: rotate(-10deg);
 }
 .div2 {
-  top: 40px;
-  left: 40px;
+  top: 14%;
+  left: 8%;
   transform: rotate(10deg);
 }
 .div3 {
-  top: 24px;
-  right: 140px;
+  top: 8%;
+  right: 30%;
   transform: rotate(-8deg);
 }
 .div4 {
-  top: 122px;
-  right: 26px;
+  top: 32%;
+  right: 4%;
   transform: rotate(4deg);
 }
 .div5 {
-  bottom: 20px;
-  left: 20px;
+  bottom: 5%;
+  left: 5%;
   transform: rotate(4deg);
 }
 .div6 {
-  bottom: 60px;
-  right: 40px;
+  bottom: 20%;
+  right: 10%;
   transform: rotate(-24deg);
 }
 .div7 {
-  bottom: 10px;
-  right: 140px;
+  bottom: 12%;
+  right: 30%;
   transform: rotate(12deg);
 }
 .div8 {
-  bottom: 12px;
-  left: 150px;
+  max-width: 24%;
+  bottom: 8%;
+  left: 28%;
   transform: rotate(-2deg);
 }
 
@@ -1742,5 +1747,9 @@ footer a:hover {
   .board-grid {
     width: 100%;
     margin-left: 0px;
+  }
+
+  .macbook {
+    border-radius: 1.2rem;
   }
 }

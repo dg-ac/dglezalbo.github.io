@@ -137,7 +137,7 @@ function dragElement(elmnt) {
   function closeDragElement() {
     // Reset size when dragging ends
     elmnt.style.transform =
-      "scale(1) rotate(" + (Math.random() * 80 - 40) + "deg)"; // Restore original transform with random rotation
+      "scale(1) rotate(" + (Math.random() * 40 - 20) + "deg)"; // Restore original transform with random rotation
     elmnt.style.transition = "0.2s ease-in-out"; // Enable transition
 
     document.onmouseup = null;
