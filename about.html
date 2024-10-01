@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>About / Daniel González-Albo › Product Designer</title>
+
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,70 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
+    <meta
+      property="og:image"
+      content="https://www.dg-ac.com/images/og_dgac.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Daniel Gonzalez-Albo, Product Designer"
+    />
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement("script")).type = "text/javascript"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(
+                    " "
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_AfhTZdvjHGRQSxprYGomoaO1KemY3CJy1pF6ehrEw45", {
+        api_host: "https://eu.i.posthog.com",
+        person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+      });
+    </script>
   </head>
   <body class="fade-in">
     <!-- hidden navbar starts here -->
@@ -30,7 +95,7 @@
           <a class="cta" href="/contact.html">Get in touch</a>
         </div>
         <a class="menu-button">
-          <img src="/images/menu.svg" height="auto" />
+          <img src="/images/menu.svg" height="auto" alt="Menu" />
         </a>
       </div>
       <div class="menu-container">
@@ -158,7 +223,11 @@
           <div class="section horizontal">
             <div class="flex-row gap12 a-items-center">
               <div class="logobox">
-                <img src="images/equalto.png" height="100%" />
+                <img
+                  src="images/equalto.png"
+                  height="100%"
+                  alt="EqualTo Logo"
+                />
               </div>
               <div class="flex-column">
                 <a
@@ -177,7 +246,11 @@
           <div class="section horizontal">
             <div class="flex-row gap12 a-items-center">
               <div class="logobox">
-                <img src="images/basecase.png" height="100%" />
+                <img
+                  src="images/basecase.png"
+                  height="100%"
+                  alt="BaseCase Logo"
+                />
               </div>
               <div class="flex-column">
                 <a
@@ -196,7 +269,7 @@
           <div class="section horizontal">
             <div class="flex-row gap12 a-items-center">
               <div class="logobox">
-                <img src="images/abbvie.png" height="100%" />
+                <img src="images/abbvie.png" height="100%" alt="AbbVie Logo" />
               </div>
               <div class="flex-column">
                 <a
@@ -229,7 +302,8 @@
                 >Univ. San Pablo-CEU<img
                   class="flag"
                   src="images/es.svg"
-                  height="10px" /><i data-lucide="arrow-up-right"></i
+                  height="10px"
+                  alt="Spain Flag" /><i data-lucide="arrow-up-right"></i
               ></a>
               <span class="light">Bachelor in Marketing</span>
             </div>
@@ -242,7 +316,8 @@
                 >Linnéuniversitetet<img
                   class="flag"
                   src="images/se.svg"
-                  height="10px" /><i data-lucide="arrow-up-right"></i
+                  height="10px"
+                  alt="Sweden Flag" /><i data-lucide="arrow-up-right"></i
               ></a>
               <span class="light">Erasmus stay</span>
             </div>
@@ -258,7 +333,8 @@
                 >Univ. San Pablo-CEU<img
                   class="flag"
                   src="images/es.svg"
-                  height="10px" /><i data-lucide="arrow-up-right"></i
+                  height="10px"
+                  alt="Spain Flag" /><i data-lucide="arrow-up-right"></i
               ></a>
               <span class="light">Bachelor in Advertising and PR</span>
             </div>
@@ -276,21 +352,33 @@
         <div class="content">
           <div class="section horizontal">
             <span class="item-name"
-              >Spanish<img class="flag" src="images/es.svg" height="10px"
+              >Spanish<img
+                class="flag"
+                src="images/es.svg"
+                height="10px"
+                alt="Spain Flag"
             /></span>
             <div class="line-separator"></div>
             <span class="light">Native</span>
           </div>
           <div class="section horizontal">
             <span class="item-name"
-              >English<img class="flag" src="images/en.svg" height="10px"
+              >English<img
+                class="flag"
+                src="images/en.svg"
+                height="10px"
+                alt="US Flag"
             /></span>
             <div class="line-separator"></div>
             <span class="light">Fluent</span>
           </div>
           <div class="section horizontal">
             <span class="item-name"
-              >German<img class="flag" src="images/de.svg" height="10px"
+              >German<img
+                class="flag"
+                src="images/de.svg"
+                height="10px"
+                alt="Germany Flag"
             /></span>
             <div class="line-separator"></div>
             <span class="light">Intermediate</span>
@@ -319,24 +407,48 @@
               </div>
 
               <div class="mydiv div2">
-                <img class="mydivheader" src="images/sticker-sketch.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-sketch.png"
+                  alt="Sketch Logo"
+                />
               </div>
 
               <div class="mydiv div3">
-                <img class="mydivheader" src="images/sticker-notion.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-notion.png"
+                  alt="Notion Logo"
+                />
               </div>
 
               <div class="mydiv div4">
-                <img class="mydivheader" src="images/sticker-cursor.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-cursor.png"
+                  alt="Cursor Logo"
+                />
               </div>
               <div class="mydiv div5">
-                <img class="mydivheader" src="images/sticker-webflow.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-webflow.png"
+                  alt="Webflow Logo"
+                />
               </div>
               <div class="mydiv div6">
-                <img class="mydivheader" src="images/sticker-framer.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-framer.png"
+                  alt="Framer Logo"
+                />
               </div>
               <div class="mydiv div7">
-                <img class="mydivheader" src="images/sticker-openai.png" />
+                <img
+                  class="mydivheader"
+                  src="images/sticker-openai.png"
+                  alt="OpenAI Logo"
+                />
               </div>
               <div class="mydiv div8">
                 <img
@@ -348,6 +460,7 @@
                     min-height: 52px;
                   "
                   src="images/sticker-octocat.png"
+                  alt="GitHub Logo"
                 />
               </div>
               <div class="macbook-logo">
@@ -355,6 +468,7 @@
                   class="macbook-logo-img"
                   src="images/apple.png"
                   draggable="false"
+                  alt="Apple Logo"
                 />
               </div>
             </div>
@@ -372,14 +486,20 @@
             <div class="game-case-container">
               <div class="game-case-side-container">
                 <div class="game-case-side">
-                  <img src="images/tok-side.png" />
+                  <img
+                    src="images/tok-side.png"
+                    alt="The Legend of Zelda: Tears of the Kingdom"
+                  />
                 </div>
               </div>
               <div class="game-case-front">
                 <div class="game-case">
                   <div class="game-cover">
                     <div class="game-cover-gradient"></div>
-                    <img src="images/tok-cover.png" />
+                    <img
+                      src="images/tok-cover.png"
+                      alt="The Legend of Zelda: Tears of the Kingdom"
+                    />
                   </div>
                 </div>
               </div>
@@ -445,7 +565,7 @@
         <div class="copy-email-container" id="mobile-hidden">
           <div class="email-text" id="email">
             <p>hi@dg-ac.com</p>
-            <img src="images/copy.svg" height="14px" />
+            <img src="images/copy.svg" height="14px" alt="Copy Email" />
           </div>
           <div class="copied-text" id="copied-text">Copied!</div>
         </div>

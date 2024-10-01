@@ -13,6 +13,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
+    <meta
+      property="og:image"
+      content="https://www.dg-ac.com/images/og_dgac.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Daniel Gonzalez-Albo, Product Designer"
+    />
+    <script>
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement("script")).type = "text/javascript"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(
+                    " "
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_AfhTZdvjHGRQSxprYGomoaO1KemY3CJy1pF6ehrEw45", {
+        api_host: "https://eu.i.posthog.com",
+        person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+      });
+    </script>
   </head>
   <body class="fade-in">
     <!-- hidden navbar starts here -->
@@ -31,7 +95,7 @@
           <a class="cta" href="/contact.html">Get in touch</a>
         </div>
         <a class="menu-button">
-          <img src="/images/menu.svg" height="auto" />
+          <img src="/images/menu.svg" height="auto" alt="Menu" />
         </a>
       </div>
       <div class="menu-container">
@@ -82,7 +146,7 @@
         </div>
         <div class="content">
           <div class="main-img">
-            <img src="images/thumbnail_equalto_wide.png" />
+            <img src="images/thumbnail_equalto_wide.png" alt="EqualTo" />
           </div>
         </div>
       </div>
@@ -131,6 +195,7 @@
                 src="images/equalto_th_01.png"
                 onclick="openLightbox();toSlide(1)"
                 class="hover-shadow preview"
+                alt="EqualTo Commissions / Edit Plan"
               />
             </div>
             <div class="col">
@@ -138,6 +203,7 @@
                 src="images/equalto_th_02.png"
                 onclick="openLightbox();toSlide(2)"
                 class="hover-shadow preview"
+                alt="EqualTo Commissions / Inspect Result"
               />
             </div>
             <div class="col">
@@ -145,6 +211,7 @@
                 src="images/equalto_th_03.png"
                 onclick="openLightbox();toSlide(3)"
                 class="hover-shadow preview"
+                alt="EqualTo Commissions / Result list"
               />
             </div>
             <div class="col">
@@ -152,6 +219,7 @@
                 src="images/equalto_th_04.png"
                 onclick="openLightbox();toSlide(4)"
                 class="hover-shadow preview"
+                alt="EqualTo Commissions / Dashboard"
               />
             </div>
           </div>
@@ -170,7 +238,11 @@
           </p>
           <div class="flex-column gap4">
             <div style="position: relative">
-              <img class="article-img" src="images/equalto-designsystem.png" />
+              <img
+                class="article-img"
+                src="images/equalto-designsystem.png"
+                alt="EqualTo Commissions' Design System"
+              />
             </div>
             <p class="sm grey">Screenshot of some of the Figma pages</p>
           </div>
@@ -182,6 +254,7 @@
             <img
               class="article-img"
               src="images/equalto-designsystem-documentation.png"
+              alt="EqualTo Commissions' Design System Documentation"
             />
           </div>
         </div>
@@ -197,7 +270,11 @@
           </p>
           <div class="flex-column gap4">
             <div style="position: relative">
-              <img class="article-img" src="images/equalto-branding.png" />
+              <img
+                class="article-img"
+                src="images/equalto-branding.png"
+                alt="EqualTo Commissions' Branding"
+              />
             </div>
             <p class="sm grey">
               Overview of the early EqualTo branding deck / May 2020
@@ -226,7 +303,11 @@
             >.
           </p>
           <div style="position: relative">
-            <img class="article-img" src="images/equalto-website.png" />
+            <img
+              class="article-img"
+              src="images/equalto-website.png"
+              alt="EqualTo Commissions' Website"
+            />
           </div>
         </div>
       </div>
@@ -240,7 +321,11 @@
             Twitter and YouTube, albeit with lower intensity.
           </p>
           <div style="position: relative">
-            <img class="article-img" src="images/equalto-marketing.png" />
+            <img
+              class="article-img"
+              src="images/equalto-marketing.png"
+              alt="EqualTo Commissions' Marketing materials"
+            />
           </div>
         </div>
       </div>
@@ -251,16 +336,32 @@
         <span class="close pointer" onclick="closeLightbox()">&times;</span>
         <div class="modal-content">
           <div class="slide">
-            <img src="images/equalto_01.png" class="image-slide" />
+            <img
+              src="images/equalto_01.png"
+              class="image-slide"
+              alt="EqualTo Commissions / Edit Plan"
+            />
           </div>
           <div class="slide">
-            <img src="images/equalto_02.png" class="image-slide" />
+            <img
+              src="images/equalto_02.png"
+              class="image-slide"
+              alt="EqualTo Commissions / Inspect Result"
+            />
           </div>
           <div class="slide">
-            <img src="images/equalto_03.png" class="image-slide" />
+            <img
+              src="images/equalto_03.png"
+              class="image-slide"
+              alt="EqualTo Commissions / Result list"
+            />
           </div>
           <div class="slide">
-            <img src="images/equalto_04.png" class="image-slide" />
+            <img
+              src="images/equalto_04.png"
+              class="image-slide"
+              alt="EqualTo Commissions / Dashboard"
+            />
           </div>
         </div>
       </div>
@@ -285,6 +386,7 @@
               <img
                 class="article-img"
                 src="images/thumbnail_terramate_wide.png"
+                alt="Terramate"
               />
             </div>
             <div class="flex-column">
@@ -295,7 +397,11 @@
 
           <a href="sheets.html" class="project-related">
             <div style="position: relative">
-              <img class="article-img" src="images/thumbnail_sheets_wide.png" />
+              <img
+                class="article-img"
+                src="images/thumbnail_sheets_wide.png"
+                alt="EqualTo Sheets"
+              />
             </div>
             <div class="flex-column">
               <p><strong>EqualTo Sheets</strong></p>
@@ -336,7 +442,7 @@
         <div class="copy-email-container" id="mobile-hidden">
           <div class="email-text" id="email">
             <p>hi@dg-ac.com</p>
-            <img src="images/copy.svg" height="14px" />
+            <img src="images/copy.svg" height="14px" alt="Copy Email" />
           </div>
           <div class="copied-text" id="copied-text">Copied!</div>
         </div>
