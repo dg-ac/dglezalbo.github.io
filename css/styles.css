@@ -129,6 +129,16 @@ p {
   line-height: 200%;
 }
 
+ul {
+  color: var(--grey-400);
+  margin-left: 14px;
+}
+
+li {
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+
 .fade-in {
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -1126,6 +1136,10 @@ form .button:active {
   gap: 6px;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+}
+
+.breadcrumb-button:hover.inactive {
+  color: var(--grey-400);
 }
 
 /* Firefox old*/
